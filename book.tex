@@ -1,0 +1,24 @@
+\documentclass[12pt, a4paper]{book}
+\usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+\usepackage{polyglossia}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xifthen}
+\hypersetup{
+	colorlinks=true, linkcolor = {black}, urlcolor = {blue}
+}
+\setmainlanguage{russian} 
+\setotherlanguage{english}
+\newfontfamily\russianfont{Times New Roman}
+\newfontfamily\englishfont{Times New Roman}
+\setmonofont{Courier New}
+\newfontfamily{\cyrillicfonttt}{Courier New}
+\usepackage{amsthm}
+
+\title{Вычислительные платформы}
+\author{A.Shafarenko  and  S.P.Hunt\\перевод: Д.В. Иртегов}
+\begin{document}
+\maketitle
+\include{ch1about.tex}
+\include{ch2subject.tex}
+\end{document}
